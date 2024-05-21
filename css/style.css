@@ -31,15 +31,20 @@ h1{
     text-align: center;
 }
 
-h5, h6 {
-    letter-spacing: 0.2rem;
+h5, h6, .nav-link {
+    letter-spacing: 0.1rem;
 }
 
 .nav-link {
     color: var(--bs-dark);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
     color: var(--bs-primary);
+}
+
+.nav-link.active {
+    font-weight: 600;
 }
