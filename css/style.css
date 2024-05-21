@@ -1,0 +1,37 @@
+@import url("https://use.typekit.net/kgq0pza.css");
+
+:root {
+    --bs-body-font-family: baskerville-urw, serif;
+    --bs-primary: rgb(92, 14, 13);
+    --bs-primary-rgb: 92, 14, 13;
+    --bs-secondary: rgb(241, 235, 179);
+    --bs-secondary-rgb: 241, 235, 179;
+    --bs-dark-rgb: rgb(36, 19, 15);
+    --bs-dark-rgb: 36, 19, 15;
+    --bs-light-rgb: rgb(236, 228, 209);
+    --bs-light-rgb: 236, 228, 209;
+
+}
+
+#nav-logo {
+    max-width: 350px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+h5, h6 {
+    letter-spacing: 0.2rem;
+}
+
+.nav-link {
+    color: var(--bs-dark);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--bs-primary);
+}
