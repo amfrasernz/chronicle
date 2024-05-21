@@ -13,6 +13,10 @@
 
 }
 
+body {
+    font-family: var(--bs-body-font-family);
+}
+
 #nav-logo {
     max-width: 350px;
 }
