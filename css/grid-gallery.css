@@ -40,7 +40,20 @@
 
 .custom-container-width {
   width: 60%;
-  max-width: 60%; /* Ensure it doesn't exceed 80% on larger screens */
+  max-width: 50%; /* Ensure it doesn't exceed 80% on larger screens */
   margin-left: auto;
   margin-right: auto;
+}
+
+.tilt-left {
+  transform: rotate(-5deg);
+}
+
+.tilt-right {
+  transform: rotate(5deg);
+}
+
+/* Optional: Add transition for a smoother effect */
+.img-fluid {
+  transition: transform 0.3s ease;
 }
