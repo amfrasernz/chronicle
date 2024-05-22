@@ -45,6 +45,13 @@
   margin-right: auto;
 }
 
+.custom-container-width-projects {
+  width: 70%;
+  max-width: 70%; /* Ensure it doesn't exceed 80% on larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tilt-left {
   transform: rotate(-5deg);
 }
@@ -56,4 +63,19 @@
 /* Optional: Add transition for a smoother effect */
 .img-fluid {
   transition: transform 0.3s ease;
+}
+
+
+.text-overflow{
+white-space: nowrap; 
+ text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.custom-row-padding{
+  padding: 20px;
+  background-color:bisque;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
 }
