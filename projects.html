@@ -13,68 +13,67 @@
 
 </head>
 
-<body class="bg-paper-texture-1">
+<body>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
-    <div class="container col-10 position-relative justify-content-start justify-content-sm-center">
-        <a class="navbar-brand col-6 col-md-4 d-flex d-lg-none nav-logo" href="./index.html">
-            <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container col-10 position-relative justify-content-end">
+      <a class="navbar-brand mx-auto d-flex d-lg-none nav-logo position-absolute start-50 translate-middle-x"
+        href="./index.html">
+        <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./students.html">Students</a>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-auto d-none d-lg-flex nav-logo" href="./index.html">
+          <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
         </a>
-        <button class="navbar-toggler position-absolute end-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="bi bi-list" style="font-size: 1.5rem;"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./students.html">Students</a>
-                </li>
-            </ul>
-            <a class="navbar-brand mx-5 d-none d-lg-flex nav-logo col-lg-3 col-xl-2" href="./index.html">
-                <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./projects.html" aria-current="page">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="./projects.html" aria-current="page">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-<div class="offcanvas offcanvas-top h-100 bg-paper-texture-2" tabindex="-1" id="offcanvasNavbar"
+  </nav>
+  <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar"
     aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header container col-10 position-relative justify-content-start justify-content-sm-center">
-        <a class="navbar-brand nav-logo col-6 col-md-4 col-lg-3 col-xl-2" href="./index.html">
-            <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
-        </a>
-        <button type="button" class="btn-close text-reset position-absolute end-0" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+    <div class="offcanvas-header container col-10 px-3 position-relative justify-content-end">
+      <a class="navbar-brand mx-auto nav-logo position-absolute top-0 start-50 translate-middle-x mt-3"
+        href="./index.html">
+        <img src="./images/chronicle-logo.png" class="img-fluid" alt="Chronicle Logo">
+      </a>
+      <button type="button" class="btn-close text-reset mt-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body container col-10 mb-7 text-center">
-        <ul class="navbar-nav justify-content-center flex-grow-1">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./students.html">Students</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./projects.html" aria-current="page">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-        </ul>
+      <ul class="navbar-nav justify-content-center flex-grow-1">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./students.html">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-</div>
-
+  </div>
 
 
     <section class="gallery-block grid-gallery pt-6 pb-7">
@@ -147,7 +146,6 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

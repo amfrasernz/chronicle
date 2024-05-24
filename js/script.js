@@ -12,12 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.getElementById('navbar');
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('shadow-sm', 'bg-paper-texture-2');
-            navbar.classList.remove('bg-transparent');
+        if (window.scrollY > 0) {
+            navbar.classList.add('shadow');
         } else {
-            navbar.classList.remove('shadow-sm', 'bg-paper-texture-2');
-            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('shadow');
         }
     });
 });
