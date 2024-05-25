@@ -1,41 +1,23 @@
-// $(document).ready(function() {
-//     $('#enterBtn').on('click', function() {
-//       $('#introScreen').addClass('fade-out');
-//       setTimeout(function() {
-//         $('#introScreen').addClass('d-none');
-//         $('#homeMainContent').removeClass('d-none');
-//       }, 1000);
-//       setTimeout(function() {
-//         $('#homeMainContent').addClass('fade-in');
-//       }, 1200);
-//     });
-//   });
-
-
-  $(document).ready(function() {
-    $('#enterBtn').on('click', function() {
-      $('#introScreen').addClass('fade-out');
-      setTimeout(function() {
-        $('#introScreen').addClass('d-none');
-        $('#homeMainContent').removeClass('d-none');
-      }, 1000);
-      setTimeout(function() {
-        $('#homeMainContent').addClass('fade-in');
-      }, 1100);
-    });
-  });
-
-
-
-
+// Show the splash screen on page load
 $(document).ready(function() {
-    var $navbar = $('#navbar');
+    $('#splashScreen').fadeIn();
+});
 
-    $(window).on('scroll', function() {
-      if ($(this).scrollTop() > 50) {
-        $navbar.addClass('shadow-sm bg-paper-texture-2').removeClass('bg-transparent');
-      } else {
-        $navbar.removeClass('shadow-sm bg-paper-texture-2').addClass('bg-transparent');
-      }
+// Show the splash screen when scrolling
+$(window).scroll(function() {
+    $('#splashScreen').fadeIn();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('shadow-sm', 'bg-paper-texture-2');
+            navbar.classList.remove('bg-transparent');
+        } else {
+            navbar.classList.remove('shadow-sm', 'bg-paper-texture-2');
+            navbar.classList.add('bg-transparent');
+        }
     });
-  });
+});
