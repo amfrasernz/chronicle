@@ -53,15 +53,16 @@ h5, h6, .nav-link {
 
  
 
-.nav-logo img {
+/* .nav-logo img {
     max-width: 250px;
-}
+} */
 
 
 /* NAV BAR */
 
 #navbar {
     min-height: 54px;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .nav-link {
@@ -183,3 +184,14 @@ h5, h6, .nav-link {
     transition: opacity 1s ease-in-out;
   }
 
+.bg-paper-texture-1 {
+    background-image: url('../images/background-texture-seamless-butterfly.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.bg-paper-texture-2 {
+    background-image: url('../images/background-texture-seamless-2.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
