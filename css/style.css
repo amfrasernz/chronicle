@@ -157,13 +157,32 @@ h5, h6, .nav-link {
 
 /* HOME PAGE */
 
-#splashScreen {
+#introScreen {
     background-image: url("../images/website-hero-img.jpg");
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
+    /* transition: opacity 1s ease-in-out, height 1s ease-in-out; */
 }
 
+/* .collapsed {
+    opacity: 0;
+    height: 0;
+  } */
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #homeMainContent {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1 !important;
+    transition: opacity 1s ease-in-out;
+  }
 
 .bg-paper-texture-1 {
     background-image: url('../images/background-texture-seamless-butterfly.png');
