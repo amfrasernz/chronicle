@@ -12,6 +12,7 @@
 //   });
 
 
+<<<<<<< HEAD
   $(document).ready(function() {
     $('#enterBtn').on('click', function() {
       $('#introScreen').addClass('fade-out');
@@ -22,6 +23,17 @@
       setTimeout(function() {
         $('#homeMainContent').addClass('fade-in');
       }, 1100);
+=======
+document.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+            navbar.classList.add('shadow');
+        } else {
+            navbar.classList.remove('shadow');
+        }
+>>>>>>> 6394cb8ddf2e3130d2763e5b416464af278a0037
     });
   });
 
