@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>John Doe</name>
+        <degree>Bachelor of Fine Arts</degree>
+        <major>Graphic Design</major>
+        <portfolio_link>https://designshow.waikato.ac.nz/index.html</portfolio_link>
+        <bio>
+            John Doe is a creative and talented graphic designer with a passion for visual storytelling and branding. He enjoys exploring various design techniques and concepts to create impactful and innovative designs. John is seeking opportunities to collaborate with like-minded professionals and contribute to meaningful projects.
+        </bio>
+        <project>
+            <name>Project 1</name>
+            <description>A branding project for a local coffee shop, focusing on creating a cohesive visual identity including logo, packaging, and signage.</description>
+            <category>Branding</category>
+        </project>
+    </student>
+    <student>
+        <name>Jane Smith</name>
+        <degree>Master of Arts</degree>
+        <major>Visual Communication Design</major>
+        <portfolio_link>https://designshow.waikato.ac.nz/index.html</portfolio_link>
+        <bio>
+            Jane Smith is a versatile visual communication designer with experience in digital media and interactive design. She is passionate about user experience and interface design, with a focus on creating intuitive and engaging digital experiences. Jane is committed to pushing the boundaries of design and exploring new ways to communicate ideas visually.
+        </bio>
+        <project>
+            <name>Project 2</name>
+            <description>An interactive website design project for a fictional travel agency, featuring user-friendly navigation and stunning visuals to inspire wanderlust.</description>
+            <category>UI/UX</category>
+        </project>
+    </student>
+    <!-- Add project details for the remaining students -->
+    <student>
+        <name>Michael Johnson</name>
+        <degree>Bachelor of Design</degree>
+        <major>Industrial Design</major>
+        <portfolio_link>https://designshow.waikato.ac.nz/index.html</portfolio_link>
+        <bio>
+            Michael Johnson is an innovative industrial designer with a keen eye for detail and functionality. He enjoys solving complex design challenges and creating products that enhance the user experience. Michael is passionate about sustainable design practices and strives to integrate environmental considerations into his work.
+        </bio>
+        <project>
+            <name>Project 3</name>
+            <description>A product design project for a portable solar charger, focusing on usability, durability, and eco-friendliness.</description>
+            <category>Product Design</category>
+        </project>
+    </student>
+    <student>
+        <name>Sarah Williams</name>
+        <degree>Bachelor of Fine Arts</degree>
+        <major>Illustration</major>
+        <portfolio_link>https://designshow.waikato.ac.nz/index.html</portfolio_link>
+        <bio>
+            Sarah Williams is a talented illustrator with a unique artistic style and a passion for storytelling. She enjoys bringing ideas to life through visual narratives and creating illustrations that evoke emotion and imagination. Sarah is seeking opportunities to collaborate with writers and publishers to illustrate children's books and graphic novels.
+        </bio>
+        <project>
+            <name>Project 4</name>
+            <description>An illustration project for a children's book series, featuring whimsical characters and vibrant landscapes.</description>
+            <category>Illustration</category>
+        </project>
+    </student>
+    <student>
+        <name>David Martinez</name>
+        <degree>Master of Design</degree>
+        <major>User Experience Design</major>
+        <portfolio_link>https://designshow.waikato.ac.nz/index.html</portfolio_link>
+        <bio>
+            David Martinez is a dedicated user experience designer with expertise in user research and interaction design. He is passionate about creating seamless and intuitive digital experiences that meet the needs of users. David enjoys collaborating with cross-functional teams to translate user insights into innovative design solutions.
+        </bio>
+        <project>
+            <name>Project 5</name>
+            <description>A user interface design project for a mobile app, focusing on enhancing user engagement and accessibility.</description>
+            <category>UI/UX</category>
+        </project>
+    </student>
