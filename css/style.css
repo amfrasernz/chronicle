@@ -247,3 +247,7 @@ h6 {
     color: var(--bs-primary);
 }
 
+.single-project-anchor {
+    text-decoration: none;
+    color: var(--bs-dark);
+}
