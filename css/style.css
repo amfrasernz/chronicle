@@ -31,6 +31,62 @@ h5, h6, .nav-link .btn {
     letter-spacing: 0.1rem;
 }
 
+.student-heading{
+    padding-bottom: 20px;
+}
+
+.custom-button{
+    margin-top:16px;
+}
+
+.custom-center-align{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-project-spacing{
+    margin-top: 60px;
+}
+
+.custom-spacing-bio{
+    margin-bottom: 60px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-dark);
+    --bs-btn-hover-border-color: var(--bs-dark);
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c757d;
+    --bs-btn-active-border-color: #6c757d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
 h6 {
     font-weight: 400;
 }
@@ -60,7 +116,7 @@ h6 {
     padding-bottom: 7rem;
  }
 
- 
+
 
 /* .nav-logo img {
     max-width: 250px;
