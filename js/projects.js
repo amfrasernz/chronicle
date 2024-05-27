@@ -110,36 +110,21 @@ function displayProjects(students) {
 
 function createProject(student) {
     return `
-    <div class="single-project op-2 row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4  align-items-center">
-    <div class="col px-0">
-        <div class="project-image-mask">
-        <image src="./images/thumbnails/placeholder-img.png" class="img-fluid project-gallery-image" />
+    <a href='./students/student.html' class='single-project-anchor'>
+        <div class="single-project op-2 row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4  align-items-center">
+            <div class="col px-0">
+                <div class="project-image-mask">
+                    <image src="./images/thumbnails/placeholder-img.png" class="img-fluid project-gallery-image" />
+                </div>
+            </div>
+            <div class="col px-0 ps-lg-5 d-flex flex-column">
+            <!--<h6 class="text-black-50">${student.project.category}</h6>-->
+                <h3>${student.project.name}</h3>
+                <p>by ${student.name}</p>
+                <p class="small clamp">${student.project.description}</p>
+                <a href="./students/student.html" class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="col px-0 ps-lg-5 d-flex flex-column">
-    <!--<h6 class="text-black-50">${student.project.category}</h6>-->
-        <h3>${student.project.name}</h3>
-        <p>by ${student.name}</p>
-        <p class="small clamp">${student.project.description}</p>
-        <a href="/" class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></a>
-    </div>
-    </div>
+    </a>
     `
-
-    // return `
-    // <div class="single-project op-1 row row-cols-1 row-cols-lg-2 row-gap-4 p-4 align-items-center">
-    //             <div class="col px-0">
-    //                 <div class="project-image-mask">
-    //                     <img src="./images/website-hero-img-bg.jpg" class="img-fluid project-gallery-image" />
-    //                 </div>
-    //             </div>
-    //             <div class="col px-0 ps-lg-5 d-flex flex-column">
-    //                 <h3>Single Project</h3>
-    //                 <p>by Student Name</p>
-    //                 <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nunc metus.
-    //                     Mauris sed imperdiet nunc metus libero.</p>
-    //                 <a href="/" class="btn btn-light text-end">View Project <i class="bi bi-arrow-right"></i></a>
-    //             </div>
-    //         </div>
-    //`
 }
