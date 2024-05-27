@@ -66,6 +66,33 @@ h6 {
     max-width: 250px;
 } */
 
+/*FOOTER */
+
+.footer {
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    padding: 30px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer-logo img {
+    height: auto;
+    margin-top: 30px;
+    max-width: 15%;
+}
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer ul{
+    list-style:  none;
+}
 
 /* NAV BAR */
 
