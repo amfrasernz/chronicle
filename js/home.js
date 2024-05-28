@@ -11,7 +11,20 @@ $(document).ready(function() {
     function showIntroScreen() {
       $('#introScreen').removeClass('d-none');
       $('#homeMainContent').addClass('d-none');
-      $('#enterBtn').on('click', function() {
+
+        $('#enterBtn').on('click', function() {
+        $('#introScreen').addClass('fade-out');
+        setTimeout(function() {
+          $('#introScreen').addClass('d-none');
+          $('#homeMainContent').removeClass('d-none');
+          setSessionItem('introShown', 'true');
+        }, 1000);
+        setTimeout(function() {
+          $('#homeMainContent').addClass('fade-in');
+        }, 1100);
+      });
+
+      $(document).on('wheel', function () {
         $('#introScreen').addClass('fade-out');
         setTimeout(function() {
           $('#introScreen').addClass('d-none');
