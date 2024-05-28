@@ -14,6 +14,7 @@
 
 body {
     font-family: var(--bs-body-font-family);
+    --bs-body-font-size: 1.1rem;
 }
 
 * {
@@ -115,6 +116,16 @@ h6 {
  .pb-7 {
     padding-bottom: 7rem;
  }
+ 
+ .py-6 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+ }
+
+ .py-7 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+ }
 
 
 
@@ -148,6 +159,7 @@ h6 {
 
 .footer ul{
     list-style:  none;
+    padding-left: 0;
 }
 
 /* NAV BAR */
@@ -190,7 +202,7 @@ h6 {
     font-size: 1.5rem;
 }
 
-.nav-link.active::after {
+.nav-link.active::after, .filter-btn.current::after {
     content: "";
     display: block;
     position: absolute;
@@ -201,6 +213,10 @@ h6 {
     height: 5px;
     background: url('../images/Squiggle@2x.png') no-repeat center center;
     background-size: 80% auto;
+  }
+
+.filter-btn.current::after {
+    height: 8px;
   }
 
 .offcanvas {
@@ -254,13 +270,8 @@ h6 {
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
-    /* transition: opacity 1s ease-in-out, height 1s ease-in-out; */
 }
 
-/* .collapsed {
-    opacity: 0;
-    height: 0;
-  } */
 
   .fade-out {
     opacity: 0;
@@ -330,7 +341,29 @@ h6 {
     color: var(--bs-primary);
 }
 
-.single-project-anchor {
+/* .single-project-anchor {
     text-decoration: none;
     color: var(--bs-dark);
+} */
+
+.filter-btn {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 0.75rem;
 }
+
+.filter-btn:hover {
+    color: var(--bs-primary);
+}
+
+.filter-btn.current {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+.filter-btn:focus, .filter-btn:active {
+    color: var(--bs-primary) !important;
+    font-weight: 600;
+    border: none;
+}
+
