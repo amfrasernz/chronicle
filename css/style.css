@@ -126,9 +126,7 @@ h6 {
     padding-top: 7rem;
     padding-bottom: 7rem;
  }
-
-
-
+  
 /* .nav-logo img {
     max-width: 250px;
 } */
@@ -253,7 +251,13 @@ h6 {
         height: 9px;
         background-size: 100% auto;
       }
+
+      /* #welcomeSection .ratio-1x1 {
+        --bs-aspect-ratio: 30%;
+        position: relative;
+      } */
 }
+
 
 
 
