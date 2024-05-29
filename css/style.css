@@ -40,6 +40,10 @@ h5, h6, .nav-link .btn {
     margin-top:16px;
 }
 
+.text-center{
+    margin-top: 60px;
+}
+
 .custom-center-align{
     text-align: center;
     margin-bottom: 20px;
@@ -52,6 +56,29 @@ h5, h6, .nav-link .btn {
 .custom-spacing-bio{
     margin-bottom: 60px;
 }
+
+.custom-icon{
+    font-size: 2rem;
+}
+
+.circle-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.circle-frame {
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+  }
+
+  .circle-frame[data-hover]:hover {
+    background-image: attr(data-hover url);
+  }
+
+
 
 .video-container {
     position: relative;
@@ -258,11 +285,13 @@ h6 {
       } */
 }
 
-
-
-
 .full-height-section {
     height: 100vh;
+
+}
+
+.full-height-section2 {
+    height: 110vh;
 
 }
 
