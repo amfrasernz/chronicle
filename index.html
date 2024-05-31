@@ -9,6 +9,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
     rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/students-carousel.css" rel="stylesheet">
 </head>
 
 <body class="bg-paper-texture-1">
@@ -20,8 +21,9 @@
         <img src="./images/hero-img-logo.gif" class="img-fluid">
       </div>
     </div>
-    <a id="enterBtn" href="javascript:void(0)" class="position-absolute bottom-0 start-50 translate-middle-x mb-6"><i
-        class="bi bi-arrow-down-circle pulse" style="font-size: 2rem; color: var(--bs-dark);"></i></a>
+    <a id="enterBtn" href="javascript:void(0)"
+      class="position-absolute bottom-0 start-50 translate-middle-x mb-6 pulse"><i class="bi bi-arrow-down-circle"
+        style="font-size: 2rem; color: var(--bs-dark);"></i></a>
   </section>
 
   <!-- Nav Bar -->
@@ -100,7 +102,7 @@
         <div id="welcomeImage" class="col col-lg-6 col-sm-10 col-12 mb-4 mt-3 p-0 ps-lg-3"></div>
       </div>
     </div>
-    <div id="welcomeSection2" class="container-fluid bg-light full-height-section"
+    <div id="welcomeSection2" class="container-fluid bg-dark full-height-section"
       style="background-image: url(./images/background-texture-3.jpg)">
       <div class="container col-10 col-md-8 col-xl-6  h-100">
         <div class="row align-items-center h-100">
@@ -114,18 +116,43 @@
         </div>
       </div>
     </div>
-    <div id="studentsSection" class="container col-10 col-md-8 col-xl-6 full-height-section pb-7">
-      <div class="row align-items-center h-100 gx-5">
-        <div class="text-center">
+    <div id="studentsSection" class="container col-10 col-md-8 col-xl-6 full-height-section py-7">
+      <div class="row align-items-center gx-5">
+        <div class="text-center mb-4">
           <h1>Meet the Designers</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nunc metus. Mauris sed imperdiet libero,
             malesuada fermentum ex.</p>
         </div>
-        <div>
-          
+        <div class="carousel-container py-1">
+          <div class="card-carousel">
+            <div class="card" id="1">
+              <div class="carousel-image-container"></div>
+              <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+            </div>
+            <div class="card" id="2">
+              <div class="carousel-image-container"></div>
+              <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+            </div>
+            <div class="card" id="3">
+              <div class="carousel-image-container"></div>
+              <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+            </div>
+            <div class="card" id="4">
+              <div class="carousel-image-container"></div>
+              <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+            </div>
+            <div class="card" id="5">
+              <div class="carousel-image-container"></div>
+              <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+            </div>
+          </div>
+          <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+          <button class="prev-arrow">Previous</button>
+      <button class="next-arrow">Next</button>
         </div>
       </div>
     </div>
+
 
     <div id="projectsSection" class="container-fluid bg-light full-height-section"
       style="background-image: url(./images/background-texture-2.jpg)">
@@ -142,23 +169,21 @@
 
     <footer class="footer container col-10 py-5">
       <div class="row justify-content-center">
-      <div class="col-7 col-sm-5 col-md-4 col-lg-2 mb-3">
-        <img src="images/uniLogo.svg" alt="uni logo">
-      </div>
-      <ul class="footerInfo">
-        <li>For more information contact us</li>
-        <li>Email: degreeshow@waikato.ac.nz</li>
-        <li>Faculty phone: 0800 924 528</li>
-        <li>Faculty information: waikato.ac.nz/go/bdes</li>
-        <li></li>
-      </ul>
-      <p class="small">&copy; 2024 Chronicle. All rights reserved.</p>
-      <p class="small">Theme designed by Fruit Loop Creative</p>
+        <div class="col-7 col-sm-5 col-md-4 col-lg-2 mb-3">
+          <img src="images/uniLogo.svg" alt="uni logo">
+        </div>
+        <ul class="footerInfo">
+          <li>For more information contact us</li>
+          <li>Email: degreeshow@waikato.ac.nz</li>
+          <li>Faculty phone: 0800 924 528</li>
+          <li>Faculty information: waikato.ac.nz/go/bdes</li>
+          <li></li>
+        </ul>
+        <p class="small">&copy; 2024 Chronicle. All rights reserved.</p>
+        <p class="small">Theme designed by Fruit Loop Creative</p>
       </div>
     </footer>
   </main>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
