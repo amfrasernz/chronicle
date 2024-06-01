@@ -347,7 +347,7 @@ section {
     border: none;
 }
 
-.single-project .btn:hover {
+.single-project .btn:hover, .single-project:hover .btn {
     color: var(--bs-primary);
 }
 
