@@ -75,9 +75,7 @@ $(document).ready(function () {
   // HOME PAGE SNAP TO SECTION
   const $sections = $('section');
   let currentIndex = 0;
-  let scrollDelta = 0;
-  const scrollThreshold = 50; // Set the threshold value as desired
-  
+
   function scrollToSection(index) {
     if (index >= 0 && index < $sections.length) {
       $('html, body').animate({
@@ -86,7 +84,7 @@ $(document).ready(function () {
       currentIndex = index;
     }
   }
-  
+
   $(document).on('keydown', function(event) {
     if (event.key === 'ArrowDown') {
       scrollToSection(currentIndex + 1);
@@ -94,16 +92,12 @@ $(document).ready(function () {
       scrollToSection(currentIndex - 1);
     }
   });
-  
+
   $('#homeMainContent').on('wheel', function(event) {
-    scrollDelta += event.originalEvent.deltaY;
-  
-    if (scrollDelta >= scrollThreshold) {
+    if (event.originalEvent.deltaY > 0) {
       scrollToSection(currentIndex + 1);
-      scrollDelta = 0; // Reset the scroll delta after scrolling to the next section
-    } else if (scrollDelta <= -scrollThreshold) {
+    } else if (event.originalEvent.deltaY < 0) {
       scrollToSection(currentIndex - 1);
-      scrollDelta = 0; // Reset the scroll delta after scrolling to the previous section
     }
   });
 });
