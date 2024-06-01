@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/kgq0pza.css");
 
+/* GENERAL */
+
 :root {
     --bs-body-font-family: baskerville-urw, serif;
     --bs-primary: rgb(92, 14, 13);
@@ -10,11 +12,12 @@
     --bs-dark-rgb: 36, 19, 15;
     --bs-light: rgb(236, 228, 209);
     --bs-light-rgb: 236, 228, 209;
+    font-size: 16px;
 }
 
 body {
-    font-family: var(--bs-body-font-family);
-    --bs-body-font-size: 1.1rem;
+    font-family: var(--bs-body-font-family);   
+    --bs-body-font-size: 1.1rem; 
 }
 
 * {
@@ -61,27 +64,6 @@ h6,
     margin-bottom: 60px;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin-top: 30px;
-    margin-bottom: 80px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
 .btn-outline-secondary {
     --bs-btn-color: var(--bs-dark);
     --bs-btn-border-color: var(--bs-dark);
@@ -98,15 +80,15 @@ h6,
     --bs-btn-disabled-border-color: #6c757d;
 }
 
-h6 {
-    font-weight: 400;
+h6, .btn {
+    font-weight: 500;
 }
 
 .btn {
     font-size: 0.8rem;
 }
 
-/* Custom spacing values */
+/* CUSTOM SPACING */
 .mb-6 {
     margin-bottom: 4.5rem;
 }
@@ -144,41 +126,23 @@ h6 {
     height: 100vh;
 }
 
-.w-125 {
-    width: 125%;
+.full-height-section {
+    height: 100vh;
 }
 
-.pulse::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    aspect-ratio: 1/1;
-    border: 2px solid rgba(var(--bs-dark-rgb), 0.5);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: pulse-animation 1.5s infinite;
-    opacity: 0;
+.bg-paper-texture-1 {
+    background-image: url('../images/background-texture-seamless-butterfly.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
 
-@keyframes pulse-animation {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.6;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0;
-    }
+.bg-paper-texture-2 {
+    background-image: url('../images/background-texture-seamless-2.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
 
-/* .nav-logo img {
-    max-width: 250px;
-} */
-
-/*FOOTER */
+/* FOOTER */
 
 .footer {
     color: black;
@@ -267,10 +231,6 @@ h6 {
     background-size: 80% auto;
 }
 
-.filter-btn.current::after {
-    height: 8px;
-}
-
 .offcanvas {
     width: 100%;
     max-width: 100%;
@@ -290,51 +250,7 @@ h6 {
     justify-content: center;
 }
 
-#welcomeImage {
-    background-image: url(../images/welcome-vert.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    height: 100%;
-}
-
-@media (max-width: 991.98px) {
-    .nav-link {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        padding-bottom: 0.85rem;
-    }
-
-    .nav-item {
-        width: fit-content;
-    }
-
-    .nav-link.active::after {
-        height: 9px;
-        background-size: 100% auto;
-    }
-
-    /* #welcomeSection .ratio-1x1 {
-        --bs-aspect-ratio: 30%;
-        position: relative;
-      } */
-
-    #welcomeImage {
-        background-image: url(../images/welcome-hori.png);
-        max-height: 30vh;
-    }
-}
-
-
-
-
-.full-height-section {
-    height: 100vh;
-
-}
-
-
-/* HOME PAGE */
+/* INTRO SCREEN */
 
 #introScreen {
     background-image: url("../images/website-hero-img.jpg");
@@ -358,17 +274,73 @@ h6 {
     transition: opacity 1s ease-in-out;
 }
 
-.bg-paper-texture-1 {
-    background-image: url('../images/background-texture-seamless-butterfly.png');
-    background-repeat: repeat-y;
-    background-size: 100% auto;
+.pulse::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid rgba(var(--bs-dark-rgb), 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse-animation 1.5s infinite;
+    opacity: 0;
 }
 
-.bg-paper-texture-2 {
-    background-image: url('../images/background-texture-seamless-2.jpg');
-    background-repeat: repeat-y;
-    background-size: 100% auto;
+@keyframes pulse-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
 }
+
+
+/* HOME */
+
+#welcomeImage {
+    background-image: url(../images/welcome-vert.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100%;
+}
+
+
+/* PROJECTS */
+
+.filter-btn.current::after {
+    height: 8px;
+}
+
+.filter-btn {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    color: var(--bs-primary);
+}
+
+.filter-btn.current {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+.filter-btn:focus,
+.filter-btn:active {
+    color: var(--bs-primary) !important;
+    font-weight: 600;
+    border: none;
+}
+
 
 .project-image-mask {
     -webkit-mask-image: url(../images/frame-mask.svg);
@@ -379,26 +351,12 @@ h6 {
     overflow: hidden;
 }
 
-
-.single-project.op-1 {
-    background-color: rgba(255, 255, 255, 0);
+.single-project {
     transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
 
-.single-project.op-1:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: scale(1.05);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.single-project.op-2 {
-    transform: scale(1);
-    transition: all 0.2s ease-in-out;
-}
-
-.single-project.op-2:hover {
+.single-project:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -417,24 +375,26 @@ h6 {
     color: var(--bs-dark);
 } */
 
-.filter-btn {
-    position: relative;
-    font-weight: 500;
-    padding-bottom: 0.75rem;
+
+@media (max-width: 991.98px) {
+    .nav-link {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.85rem;
+    }
+
+    .nav-item {
+        width: fit-content;
+    }
+
+    .nav-link.active::after {
+        height: 9px;
+        background-size: 100% auto;
+    }
+
+    #welcomeImage {
+        background-image: url(../images/welcome-hori.png);
+        max-height: 30vh;
+    }
 }
 
-.filter-btn:hover {
-    color: var(--bs-primary);
-}
-
-.filter-btn.current {
-    color: var(--bs-primary);
-    font-weight: 600;
-}
-
-.filter-btn:focus,
-.filter-btn:active {
-    color: var(--bs-primary) !important;
-    font-weight: 600;
-    border: none;
-}
