@@ -101,5 +101,21 @@ $(document).ready(function () {
   //   }
   // });
   // PROJECTS
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const frames = document.querySelectorAll('.circle-frame');
+    frames.forEach(frame => {
+      const originalUrl = frame.style.backgroundImage;
+      const hoverUrl = frame.getAttribute('data-hover');
+      if (hoverUrl) {
+        frame.addEventListener('mouseover', () => {
+          frame.style.backgroundImage = `url(${hoverUrl})`;
+        });
+        frame.addEventListener('mouseout', () => {
+          frame.style.backgroundImage = originalUrl;
+        });
+      }
+    });
+  });
 });
 
