@@ -72,8 +72,6 @@ $(document).ready(function () {
     showMainContent();
   }
 
-
-  // PROJECTS
   const $frames = $('.circle-frame');
   $frames.each(function () {
     const $frame = $(this);
@@ -90,6 +88,29 @@ $(document).ready(function () {
       );
     }
   });
+
+
+    // PROJECTS
+      $('.filter-btn').on('click', function() {
+        // Remove 'current' class from all buttons
+        $('.filter-btn').removeClass('current');
+        // Add 'current' class to the clicked button
+        $(this).addClass('current');
+    
+        // Get the filter category
+        const filter = $(this).data('filter');
+    
+        // Show/Hide projects based on the filter
+        if (filter === 'all') {
+          $('.single-project').show();
+        } else {
+          $('.single-project').hide();
+          $(`.single-project[data-category="${filter}"]`).show();
+        }
+      });
+    
+      // Trigger the click event for the 'All Projects' button to show all projects initially
+      $('.filter-btn[data-filter="all"]').click();    
 });
 
 
