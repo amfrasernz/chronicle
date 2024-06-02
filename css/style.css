@@ -43,73 +43,6 @@ h6,
     letter-spacing: 0.1rem;
 }
 
-.student-heading{
-    padding-bottom: 20px;
-}
-
-.custom-button{
-    margin-top:16px;
-}
-
-.text-center{
-    margin-top: 60px;
-}
-
-.custom-center-align{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.custom-project-spacing{
-    margin-top: 60px;
-}
-
-.custom-spacing-bio{
-    margin-bottom: 60px;
-}
-
-.custom-icon{
-    font-size: 2rem;
-}
-
-.circle-frame img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-.circle-frame {
-    background-repeat: no-repeat;
-    background-size: contain;
-    aspect-ratio: 1 / 1;
-  }
-
-  .circle-frame[data-hover]:hover {
-    background-image: attr(data-hover url);
-  }
-
-
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin-top: 30px;
-    margin-bottom: 80px;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
 .btn-outline-secondary {
     --bs-btn-color: var(--bs-dark);
     --bs-btn-border-color: var(--bs-dark);
@@ -295,53 +228,7 @@ h6,
     justify-content: center;
 }
 
-#welcomeImage {
-    background-image: url(../images/welcome-vert.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    height: 100%;
-  }
-
-@media (max-width: 991.98px) { 
-    .nav-link {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        padding-bottom: 0.85rem;
-    } 
-    
-    .nav-item {
-        width: fit-content;
-    }
-
-    .nav-link.active::after {
-        height: 9px;
-        background-size: 100% auto;
-      }
-
-      /* #welcomeSection .ratio-1x1 {
-        --bs-aspect-ratio: 30%;
-        position: relative;
-      } */
-
-      #welcomeImage {
-        background-image: url(../images/welcome-hori.png);
-        max-height: 30vh;
-      }
-}
-
-.full-height-section {
-    height: 100vh;
-
-}
-
-.full-height-section2 {
-    height: 110vh;
-
-}
-
-
-/* HOME PAGE */
+/* INTRO SCREEN */
 
 #introScreen {
     background-image: url("../images/website-hero-img.jpg");
@@ -382,6 +269,26 @@ h6,
 section {
     scroll-snap-align: start;
 }
+
+
+.circle-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.circle-frame {
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+  }
+
+  .circle-frame[data-hover]:hover {
+    background-image: attr(data-hover url);
+  }
+
+
 
 @keyframes pulse-animation {
     0% {
@@ -651,3 +558,4 @@ section {
         margin-right: 1rem !important;
     }
 }
+
