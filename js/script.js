@@ -91,26 +91,37 @@ $(document).ready(function () {
 
 
     // PROJECTS
-      $('.filter-btn').on('click', function() {
-        // Remove 'current' class from all buttons
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        var filter = getUrlParameter('filter') || 'all';
+
         $('.filter-btn').removeClass('current');
-        // Add 'current' class to the clicked button
-        $(this).addClass('current');
-    
-        // Get the filter category
-        const filter = $(this).data('filter');
-    
-        // Show/Hide projects based on the filter
+        $('.filter-btn[data-filter="' + filter + '"]').addClass('current');
+
         if (filter === 'all') {
-          $('.single-project').show();
+            $('.single-project').show();
         } else {
-          $('.single-project').hide();
-          $(`.single-project[data-category="${filter}"]`).show();
+            $('.single-project').hide();
+            $('.single-project[data-category="' + filter + '"]').show();
         }
-      });
-    
-      // Trigger the click event for the 'All Projects' button to show all projects initially
-      $('.filter-btn[data-filter="all"]').click();    
+
+        $('.filter-btn').click(function() {
+            var selectedFilter = $(this).data('filter');
+            $('.filter-btn').removeClass('current');
+            $(this).addClass('current');
+
+            if (selectedFilter === 'all') {
+                $('.single-project').show();
+            } else {
+                $('.single-project').hide();
+                $('.single-project[data-category="' + selectedFilter + '"]').show();
+            }
+        });
 });
 
 
