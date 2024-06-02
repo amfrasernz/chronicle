@@ -48,23 +48,3 @@ $(document).ready(function() {
       showMainContent();
     }
   });
-<<<<<<< HEAD
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const frames = document.querySelectorAll('.circle-frame');
-    frames.forEach(frame => {
-      const originalUrl = frame.style.backgroundImage;
-      const hoverUrl = frame.getAttribute('data-hover');
-      if (hoverUrl) {
-        frame.addEventListener('mouseover', () => {
-          frame.style.backgroundImage = `url(${hoverUrl})`;
-        });
-        frame.addEventListener('mouseout', () => {
-          frame.style.backgroundImage = originalUrl;
-        });
-      }
-    });
-  });
-=======
->>>>>>> 34c8aff0bc0b8dd66eddfcada56114090bfa867d
