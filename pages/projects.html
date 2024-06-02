@@ -79,18 +79,17 @@
 
     <main class="pt-6 pb-7 col-10 col-md-8 col-xl-6 container">
         <div class="text-center pb-4">
-            <h1 class="text-center">Projects</h1><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nunc metus. Mauris sed imperdiet
-                libero, malesuada fermentum ex. </p>
+            <h1>Projects</h1><br>
+            <p class="col-12 col-lg-10 mx-auto">Explore each category to see how our students have transformed their ideas into successful design solutions.</p>
         </div>
 
         <div class="d-flex gap-2 justify-content-center d-flex flex-wrap">
-            <button class="btn filter-btn px-3 current" type="button">All Projects</button>
-            <button class="btn filter-btn px-3" type="button">Mix Media</button>
-            <button class="btn filter-btn px-3" type="button">Product</button>
-            <button class="btn filter-btn px-3" type="button">Mobile/Web</button>
-            <button class="btn filter-btn px-3" type="button">Print/Editorial</button>
-            <button class="btn filter-btn px-3" type="button">Film/Motion</button>
+            <button class="btn filter-btn px-3 current" type="button"  data-filter="all">All Projects</button>
+            <button class="btn filter-btn px-3" type="button" data-filter="mix-media">Mix Media</button>
+            <button class="btn filter-btn px-3" type="button" data-filter="product">Product</button>
+            <button class="btn filter-btn px-3" type="button" data-filter="mobile-web">Mobile/Web</button>
+            <button class="btn filter-btn px-3" type="button" data-filter="print-editorial">Print/Editorial</button>
+            <button class="btn filter-btn px-3" type="button" data-filter="film-motion">Film/Motion</button>
         </div>
 
 
@@ -98,14 +97,14 @@
 
             <div class="stamp-border-lg px-1 single-project">
                 <a href="../students/student.html"
-                    class=" row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    class=" row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
                     data-category="mix-media">
                     <div class="col px-0">
                         <div class="project-image-mask">
                             <img src="../images/thumbnails/noted.png" class="img-fluid project-gallery-image" />
                         </div>
                     </div>
-                    <div class="col px-0 ps-md-5 d-flex flex-column">
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
                         <h4>Noted</h4>
                         <h6 class="student-name text-primary">Bella Bay</h6>
                         <p class="small clamp">Welcome to Noted. This publication has been designed to teach people
@@ -117,177 +116,174 @@
                 </a>
             </div>
 
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none stamp-border"
-                data-category="mix-media">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/noted.png" class="img-fluid project-gallery-image" />
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="product">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/wonder-wanderers.png" class="img-fluid project-gallery-image" />
+                        </div>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Noted</h4>
-                    <h6 class="student-name text-primary">Bella Bay</h6>
-                    <p class="small clamp">Welcome to Noted. This publication has been designed to teach people
-                        to write creatively. While people of any age group could benefit from
-                        this, the publication has been created with those between the ages of 18
-                        – 22 in mind.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="product">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/wonder-wanderers.png" class="img-fluid project-gallery-image" />
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Wonder Wanderers</h4>
+                        <h6 class="student-name text-primary">Paris Robertson</h6>
+                        <p class="small clamp">In our digital age, the term ‘iPad kid’ is used to describe those deeply
+                            reliant on screens for everyday tasks. Excessive screen time, particularly
+                            among children, poses concerns for mental health, physical fitness,
+                            and relationships.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Wonder Wanderers</h4>
-                    <h6 class="student-name text-primary">Paris Robertson</h6>
-                    <p class="small clamp">In our digital age, the term ‘iPad kid’ is used to describe those deeply
-                        reliant on screens for everyday tasks. Excessive screen time, particularly
-                        among children, poses concerns for mental health, physical fitness,
-                        and relationships.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="mobile-web">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/soul-script.png" class="img-fluid project-gallery-image" />
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="mobile-web">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/soul-script.png" class="img-fluid project-gallery-image" />
+                        </div>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Soul Script</h4>
-                    <h6 class="student-name text-primary">Anika Stowers</h6>
-                    <p class="small clamp">Soul Script, an anxiety relief app tailor-made for New Zealanders,
-                        seeks to address a common challenge we all face—dealing with anxiety.
-                        Anxiety is a natural emotion experienced by every one of us.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="print-editorial">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/kakapo.png" class="img-fluid project-gallery-image" />
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Soul Script</h4>
+                        <h6 class="student-name text-primary">Anika Stowers</h6>
+                        <p class="small clamp">Soul Script, an anxiety relief app tailor-made for New Zealanders,
+                            seeks to address a common challenge we all face—dealing with anxiety.
+                            Anxiety is a natural emotion experienced by every one of us.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Kākāpō Recovery</h4>
-                    <h6 class="student-name text-primary">Jiake Li</h6>
-                    <p class="small clamp">Do you know what “Kākāpō” is? Do you know how many there are
-                        now?
-                        This project will introduce you to Kākāpō, this mysterious and adorable
-                        little guy.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="mobile-web">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/nutrihunt.png" class="img-fluid project-gallery-image" />
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="print-editorial">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/kakapo.png" class="img-fluid project-gallery-image" />
+                        </div>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Nutrihunt</h4>
-                    <h6 class="student-name text-primary">Dana Damian</h6>
-                    <p class="small clamp">Nutrihunt is a food search app that helps people find cafes or
-                        restaurants that could accommodate their lifestyle. It provides an
-                        onboarding Questionnaire to get to know you better, a Journal for you
-                        to record your experience, and a Timeline that allows you to track all
-                        the images that you upload with your journal entries.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="mobile-web">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/aviary-atlas.png" class="img-fluid project-gallery-image" />
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Kākāpō Recovery</h4>
+                        <h6 class="student-name text-primary">Jiake Li</h6>
+                        <p class="small clamp">Do you know what “Kākāpō” is? Do you know how many there are
+                            now?
+                            This project will introduce you to Kākāpō, this mysterious and adorable
+                            little guy.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Aviary Atlas</h4>
-                    <h6 class="student-name text-primary">Kexin Song</h6>
-                    <p class="small clamp">For my Capstone project, I created a birding app for bird lovers. The
-                        app focuses on the Department of Conservation Te Papa Atawhai
-                        in New Zealand, so my app focuses only on birds in New Zealand.
-                        Users who find birds in parks or in the wild can use the app to scan
-                        the bird, which will display information about the bird.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="mobile-web">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/freshwater-future.png" class="img-fluid project-gallery-image" />
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="mobile-web">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/nutrihunt.png" class="img-fluid project-gallery-image" />
+                        </div>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Freshwater Future</h4>
-                    <h6 class="student-name text-primary">Nikkaella Lulu</h6>
-                    <p class="small clamp">The “Freshwater Future” app is a New Zealand-focused educational
-                        tool designed to raise awareness about the impact of climate change on
-                        New Zealand’s freshwater ecosystems.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="film-motion">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/impersonate.png" class="img-fluid project-gallery-image" />
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Nutrihunt</h4>
+                        <h6 class="student-name text-primary">Dana Damian</h6>
+                        <p class="small clamp">Nutrihunt is a food search app that helps people find cafes or
+                            restaurants that could accommodate their lifestyle. It provides an
+                            onboarding Questionnaire to get to know you better, a Journal for you
+                            to record your experience, and a Timeline that allows you to track all
+                            the images that you upload with your journal entries.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Impersonate</h4>
-                    <h6 class="student-name text-primary">Ravi Vathada</h6>
-                    <p class="small clamp">Impersonate is a short film that follows the story of two people and their
-                        battle with depression and whether they can overcome the hurdle or
-                        fall into despair. Me and my group mate Suwan went with this theme
-                        as we thought it would be a relatable topic for people around our age
-                        (18-25), especially in the modern world.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
-
-            <a href="../students/student.html"
-                class="single-project row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
-                data-category="film-motion">
-                <div class="col px-0">
-                    <div class="project-image-mask">
-                        <img src="../images/thumbnails/too-much.png" class="img-fluid project-gallery-image" />
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="mobile-web">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/aviary-atlas.png" class="img-fluid project-gallery-image" />
+                        </div>
                     </div>
-                </div>
-                <div class="col px-0 ps-md-5 d-flex flex-column">
-                    <h4>Too Much</h4>
-                    <h6 class="student-name text-primary">Armelle Tran</h6>
-                    <p class="small clamp">Procrastination, anxiety, fatigue and stress are what students get in the
-                        21st century. A lot of these signs lie under the term “burnout” and to
-                        my surprise, not every struggling student knows their limit before their
-                        stamina exhaustively drops.</p>
-                    <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
-                </div>
-            </a>
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Aviary Atlas</h4>
+                        <h6 class="student-name text-primary">Kexin Song</h6>
+                        <p class="small clamp">For my Capstone project, I created a birding app for bird lovers. The
+                            app focuses on the Department of Conservation Te Papa Atawhai
+                            in New Zealand, so my app focuses only on birds in New Zealand.
+                            Users who find birds in parks or in the wild can use the app to scan
+                            the bird, which will display information about the bird.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="mobile-web">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/freshwater-future.png" class="img-fluid project-gallery-image" />
+                        </div>
+                    </div>
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Freshwater Future</h4>
+                        <h6 class="student-name text-primary">Nikkaella Lulu</h6>
+                        <p class="small clamp">The “Freshwater Future” app is a New Zealand-focused educational
+                            tool designed to raise awareness about the impact of climate change on
+                            New Zealand’s freshwater ecosystems.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="film-motion">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/impersonate.png" class="img-fluid project-gallery-image" />
+                        </div>
+                    </div>
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Impersonate</h4>
+                        <h6 class="student-name text-primary">Ravi Vathada</h6>
+                        <p class="small clamp">Impersonate is a short film that follows the story of two people and their
+                            battle with depression and whether they can overcome the hurdle or
+                            fall into despair. Me and my group mate Suwan went with this theme
+                            as we thought it would be a relatable topic for people around our age
+                            (18-25), especially in the modern world.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="stamp-border-lg px-1 single-project">
+                <a href="../students/student.html"
+                    class="row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center d-flex text-dark text-decoration-none"
+                    data-category="film-motion">
+                    <div class="col px-0">
+                        <div class="project-image-mask">
+                            <img src="../images/thumbnails/too-much.png" class="img-fluid project-gallery-image" />
+                        </div>
+                    </div>
+                    <div class="col px-0 ps-lg-5 d-flex flex-column">
+                        <h4>Too Much</h4>
+                        <h6 class="student-name text-primary">Armelle Tran</h6>
+                        <p class="small clamp">Procrastination, anxiety, fatigue and stress are what students get in the
+                            21st century. A lot of these signs lie under the term “burnout” and to
+                            my surprise, not every struggling student knows their limit before their
+                            stamina exhaustively drops.</p>
+                        <p class="btn btn-light align-self-end">View Project <i class="bi bi-arrow-right"></i></p>
+                    </div>
+                </a>
+            </div>
 
         </div>
 

@@ -130,7 +130,7 @@ h6,
 }
 
 .pt-7 {
-    padding-top: 7rem;
+    padding-top: 7rem !important;
 }
 
 .pb-7 {
@@ -157,19 +157,6 @@ h6,
     background-image: url('../images/background-texture-seamless-2.jpg');
     background-repeat: repeat-y;
     background-size: 100% auto;
-}
-
-.stamp-border, .stamp-border-lg {
-    border: 25px solid transparent;
-    border-image-source: url('../images/Frame-border-4.png');
-    border-image-slice: 25%;
-    border-image-repeat: round;
-    /* aspect-ratio: 3/4; */
-    
-}
-
-.stamp-border-lg {
-    border-width: 30px;
 }
 
 
@@ -420,6 +407,10 @@ section {
     border: none;
 }
 
+.filter-btn:not(:focus) {
+    border: none;
+}
+
 
 .project-image-mask {
     -webkit-mask-image: url(../images/frame-mask.svg);
@@ -440,10 +431,6 @@ section {
     margin-bottom: -0.5rem;
 }
 
-.single-project:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
 
 .single-project .btn {
     background-color: transparent;
@@ -451,7 +438,8 @@ section {
     padding: 0;
 }
 
-.single-project .btn:hover, .single-project:hover .btn {
+.single-project .btn:hover,
+.single-project:hover .btn {
     color: var(--bs-primary);
 }
 
@@ -467,10 +455,99 @@ section {
     aspect-ratio: 3/4;
 }
 
+#studentsGallery .item h6 {
+    font-size: 0.8rem;
+    z-index: 3;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
 
+#studentsGallery img {
+    filter: grayscale(70%); 
+    padding: 6px;
+}
 
+#studentsGallery .bg-light {
+    position: relative;
+    margin: -8px;
+    height: 108%;
+}
+
+#studentsGallery .bg-light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../images/Stamp-back.png'); */
+    background-color: rgba(255, 255, 255, 0.219);
+    opacity: 1;
+    pointer-events: none;
+}
+
+#studentsGallery .bg-light::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Stamp-back.png');
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.tilt-left {
+    transform: rotate(-5deg);
+}
+
+.tilt-right {
+    transform: rotate(5deg);
+}
+
+.gallery-block.grid-gallery .scale-on-hover {
+    transition: all 0.4s ease;
+}
+
+.stamp-border,
+.stamp-border-lg {
+    border: 20px solid transparent;
+    border-image-source: url('../images/Frame-border-4.png');
+    border-image-slice: 25%;
+    border-image-repeat: round;
+}
+
+.stamp-border-lg {
+    border-width: 30px;
+}
+
+#studentsGallery .item:hover h6 {
+    opacity: 1;
+}
+
+#studentsGallery .item:hover .bg-light::after {
+    opacity: 0.1;
+}
+
+.gallery-block.grid-gallery .scale-on-hover:hover, .single-project:hover {
+    transform: scale(1.05);
+    filter: url('../images/stamp-shadow.svg#shadow');
+}
+
+.single-project:hover .bg-opacity-75 {
+    background-color: white !important;
+}
 
 /* CONTACT */
+
+#contactSection {
+    min-height: 80vh;
+    /* padding-bottom: 15%; */
+}
+
 .contact-item:hover {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
@@ -497,6 +574,10 @@ section {
         background-image: url(../images/welcome-hori.png);
         max-height: 30vh;
     }
+
+    .stamp-border {
+        border-width: 25px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -506,5 +587,38 @@ section {
 
     .pt-sm-6 {
         padding-top: 4.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #studentsGallery .item h6 {
+        opacity: 1;
+    }
+
+    .stamp-border {
+        border-width: 30px;
+    }
+}
+
+@media (max-width: 577px) {
+    #studentsGallery .bg-light {
+        margin: -10px;
+        height: 111%;
+    }
+
+    #studentsGallery h6 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    #studentsGallery .bg-light {
+        height: 120%;
+    }
+
+
+    #studentsGallery .row {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
     }
 }
