@@ -154,6 +154,34 @@ h6 {
     padding-bottom: 7rem;
  }
   
+ .center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .w-125 {
+    width: 125%;
+  }
+
+.pulse {
+   animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* .nav-logo img {
     max-width: 250px;
 } */
@@ -263,6 +291,14 @@ h6 {
     justify-content: center;
 }
 
+#welcomeImage {
+    background-image: url(../images/welcome-vert.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100%;
+  }
+
 @media (max-width: 991.98px) { 
     .nav-link {
         font-size: 1.5rem;
@@ -283,6 +319,11 @@ h6 {
         --bs-aspect-ratio: 30%;
         position: relative;
       } */
+
+      #welcomeImage {
+        background-image: url(../images/welcome-hori.png);
+        max-height: 30vh;
+      }
 }
 
 .full-height-section {

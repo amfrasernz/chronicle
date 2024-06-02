@@ -66,13 +66,13 @@ function createProject(student) {
 
 
     return `
-        <div class="single-project op-2 row row-cols-1 row-cols-lg-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center" data-value="${transformString(student.name)}">
+        <div class="single-project op-2 row row-cols-1 row-cols-md-2 row-gap-4 bg-white bg-opacity-75 p-4 align-items-center" data-value="${transformString(student.name)}">
             <div class="col px-0">
                 <div class="project-image-mask">
                     <img src="${projectImgUrl}" class="img-fluid project-gallery-image" />
                 </div>
             </div>
-            <div class="col px-0 ps-lg-5 d-flex flex-column">
+            <div class="col px-0 ps-md-5 d-flex flex-column">
             <!--<h6 class="text-black-50">${student.project.category}</h6>-->
                 <h3>${student.project.name}</h3>
                 <p>by ${student.name}</p>
