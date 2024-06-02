@@ -100,5 +100,9 @@ $(document).ready(function () {
       scrollToSection(currentIndex - 1);
     }
   });
+
+
+
+  // PROJECTS
 });
 

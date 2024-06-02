@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="stamp-border">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="rgba(0, 0, 0, 0.3)" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" style="fill:none;stroke:black;stroke-width:3"/>
+</svg>
