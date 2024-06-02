@@ -19,7 +19,7 @@
   opacity: 0.8;
 }
 
-.gallery-block.grid-gallery .item img{
+.gallery-block.grid-gallery .item img, .gallery-block.grid-gallery .scale-on-hover {
   transition: 0.4s;
 }
 
@@ -58,7 +58,7 @@
 }
 
 /* Optional: Add transition for a smoother effect */
-.img-fluid {
+.img-fluid, .scale-on-hover {
   transition: transform 0.3s ease;
 }
 

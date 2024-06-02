@@ -119,6 +119,20 @@ h6,
     background-size: 100% auto;
 }
 
+.stamp-border, .stamp-border-lg {
+    border: 25px solid transparent;
+    border-image-source: url('../images/Frame-border-4.png');
+    border-image-slice: 25%;
+    border-image-repeat: round;
+    /* aspect-ratio: 3/4; */
+    
+}
+
+.stamp-border-lg {
+    border-width: 30px;
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -337,6 +351,11 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
+.single-project a {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
 .single-project:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -345,6 +364,7 @@ section {
 .single-project .btn {
     background-color: transparent;
     border: none;
+    padding: 0;
 }
 
 .single-project .btn:hover, .single-project:hover .btn {
@@ -355,6 +375,16 @@ section {
     text-decoration: none;
     color: var(--bs-dark);
 } */
+
+
+/* STUDENTS */
+
+#studentsGallery .stamp-border {
+    aspect-ratio: 3/4;
+}
+
+
+
 
 /* CONTACT */
 .contact-item:hover {
