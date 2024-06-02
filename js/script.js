@@ -73,36 +73,33 @@ $(document).ready(function () {
   }
 
   // HOME PAGE SNAP TO SECTION
-  const $sections = $('section');
-  let currentIndex = 0;
+  // const $sections = $('section');
+  // let currentIndex = 0;
 
-  function scrollToSection(index) {
-    if (index >= 0 && index < $sections.length) {
-      $('html, body').animate({
-        scrollTop: $sections.eq(index).offset().top
-      }, 500);
-      currentIndex = index;
-    }
-  }
+  // function scrollToSection(index) {
+  //   if (index >= 0 && index < $sections.length) {
+  //     $('html, body').animate({
+  //       scrollTop: $sections.eq(index).offset().top
+  //     }, 500);
+  //     currentIndex = index;
+  //   }
+  // }
 
-  $(document).on('keydown', function(event) {
-    if (event.key === 'ArrowDown') {
-      scrollToSection(currentIndex + 1);
-    } else if (event.key === 'ArrowUp') {
-      scrollToSection(currentIndex - 1);
-    }
-  });
+  // $(document).on('keydown', function(event) {
+  //   if (event.key === 'ArrowDown') {
+  //     scrollToSection(currentIndex + 1);
+  //   } else if (event.key === 'ArrowUp') {
+  //     scrollToSection(currentIndex - 1);
+  //   }
+  // });
 
-  $('#homeMainContent').on('wheel', function(event) {
-    if (event.originalEvent.deltaY > 0) {
-      scrollToSection(currentIndex + 1);
-    } else if (event.originalEvent.deltaY < 0) {
-      scrollToSection(currentIndex - 1);
-    }
-  });
-
-
-
+  // $('#homeMainContent').on('wheel', function(event) {
+  //   if (event.originalEvent.deltaY > 0) {
+  //     scrollToSection(currentIndex + 1);
+  //   } else if (event.originalEvent.deltaY < 0) {
+  //     scrollToSection(currentIndex - 1);
+  //   }
+  // });
   // PROJECTS
 });
 
