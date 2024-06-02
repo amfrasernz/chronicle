@@ -107,6 +107,10 @@ h6,
     padding-bottom: 7rem;
 }
 
+.vh-min-100 {
+    min-height: 100vh;
+}
+
 .bg-paper-texture-1 {
     background-image: url('../images/background-texture-seamless-butterfly.png');
     background-repeat: repeat-y;
