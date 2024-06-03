@@ -270,8 +270,13 @@ h6,
     opacity: 0;
 }
 
-section {
-    scroll-snap-align: start;
+#welcomeSection2 {
+    background-color: #d5bd9dc1;
+}
+
+#welcomeSection2, #projectSection {
+    background-size: cover;
+    background-position: center center;
 }
 
 
@@ -517,6 +522,11 @@ section {
 
     .stamp-border {
         border-width: 25px;
+    }
+
+    #introScreen {
+        background-image: url("../images/website-hero-img-vert.jpg");
+        background-position: center bottom;
     }
 }
 
