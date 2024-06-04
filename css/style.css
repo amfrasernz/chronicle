@@ -274,7 +274,8 @@ h6,
     background-color: #d5bd9dc1;
 }
 
-#welcomeSection2, #projectSection {
+#welcomeSection2,
+#project {
     background-size: cover;
     background-position: center center;
 }
@@ -285,20 +286,20 @@ h6,
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-  }
+}
 
 .circle-frame {
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1 / 1;
-  }
+}
 
-  .circle-frame[data-hover]:hover {
+.circle-frame[data-hover]:hover {
     background-image: attr(data-hover url);
-  }
+}
 
   .custom-col {
-    flex: 0 0 calc(100% / 4); /* Default to 4 columns per row */
+    flex: 0 0 calc(100% / 4);
     max-width: calc(100% / 4);
   }
   .custom-col img {
@@ -306,13 +307,13 @@ h6,
   }
   @media (max-width: 768px) {
     .custom-col {
-      flex: 0 0 calc(100% / 2); /* 2 columns per row on small screens */
+      flex: 0 0 calc(100% / 2); 
       max-width: calc(100% / 2);
     }
   }
   @media (max-width: 576px) {
     .custom-col {
-      flex: 0 0 100%; /* 1 column per row on extra small screens */
+      flex: 0 0 100%;
       max-width: 100%;
     }
   }
@@ -344,6 +345,13 @@ h6,
 
 
 /* PROJECTS */
+
+#project:before {
+    content: '';
+    display: block;
+    height: 4rem;
+    visibility: hidden;
+}
 
 .filter-btn.current::after {
     height: 8px;
@@ -408,11 +416,6 @@ h6,
     color: var(--bs-primary);
 }
 
-/* .single-project-anchor {
-    text-decoration: none;
-    color: var(--bs-dark);
-} */
-
 
 /* STUDENTS */
 
@@ -428,7 +431,7 @@ h6,
 }
 
 #studentsGallery img {
-    filter: grayscale(70%); 
+    filter: grayscale(70%);
     padding: 6px;
 }
 
@@ -445,7 +448,6 @@ h6,
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url('../images/Stamp-back.png'); */
     background-color: rgba(255, 255, 255, 0.219);
     opacity: 1;
     pointer-events: none;
@@ -460,7 +462,6 @@ h6,
     height: 100%;
     background-image: url('../images/Stamp-back.png');
     opacity: 0.5;
-    /* Adjust opacity as needed */
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
@@ -497,7 +498,8 @@ h6,
     opacity: 0.1;
 }
 
-.gallery-block.grid-gallery .scale-on-hover:hover, .single-project:hover {
+.gallery-block.grid-gallery .scale-on-hover:hover,
+.single-project:hover {
     transform: scale(1.05);
     filter: url('../images/stamp-shadow.svg#shadow');
 }
@@ -506,12 +508,8 @@ h6,
     background-color: white !important;
 }
 
-/* CONTACT */
 
-#contactSection {
-    min-height: 80vh;
-    /* padding-bottom: 15%; */
-}
+/* CONTACT */
 
 .contact-item:hover {
     background-color: rgba(255, 255, 255, 0.4);
@@ -592,4 +590,3 @@ h6,
         margin-right: 1rem !important;
     }
 }
-
