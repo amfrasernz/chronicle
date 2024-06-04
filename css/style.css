@@ -298,6 +298,26 @@ h6,
     background-image: attr(data-hover url);
 }
 
+  .custom-col {
+    flex: 0 0 calc(100% / 4); /* Default to 4 columns per row */
+    max-width: calc(100% / 4);
+  }
+  .custom-col img {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .custom-col {
+      flex: 0 0 calc(100% / 2); /* 2 columns per row on small screens */
+      max-width: calc(100% / 2);
+    }
+  }
+  @media (max-width: 576px) {
+    .custom-col {
+      flex: 0 0 100%; /* 1 column per row on extra small screens */
+      max-width: 100%;
+    }
+  }
+
 
 
 @keyframes pulse-animation {
