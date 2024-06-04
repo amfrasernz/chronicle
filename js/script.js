@@ -2,13 +2,17 @@ $(document).ready(function () {
   // NAVBAR ON SCROLL
   let navbar = $('#navbar');
 
-  $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 50) {
+  function updateNavbarAppearance() {
+    if ($(window).scrollTop() > 50) {
       navbar.addClass('shadow-sm bg-paper-texture-2').removeClass('bg-transparent');
     } else {
       navbar.removeClass('shadow-sm bg-paper-texture-2').addClass('bg-transparent');
     }
-  });
+  }
+
+  updateNavbarAppearance();
+
+  $(window).on('scroll', updateNavbarAppearance);
 
   // CLIP TEXT BY NUM LINES
   $('.clamp').each(function () {
@@ -32,34 +36,26 @@ $(document).ready(function () {
     sessionStorage.setItem(key, value);
   }
 
-  function showIntroScreen() {
+  function toggleIntroAndContent() {
+    $('#introScreen').addClass('fade-out');
+    setTimeout(function () {
+        $('#introScreen').addClass('d-none');
+        $('#homeMainContent').removeClass('d-none');
+        setSessionItem('introShown', 'true');
+    }, 1000);
+    setTimeout(function () {
+        $('#homeMainContent').addClass('fade-in');
+    }, 1100);
+}
+
+function showIntroScreen() {
     $('#introScreen').removeClass('d-none');
     $('#homeMainContent').addClass('d-none');
 
-    $('#enterBtn').on('click', function () {
-      $('#introScreen').addClass('fade-out');
-      setTimeout(function () {
-        $('#introScreen').addClass('d-none');
-        $('#homeMainContent').removeClass('d-none');
-        setSessionItem('introShown', 'true');
-      }, 1000);
-      setTimeout(function () {
-        $('#homeMainContent').addClass('fade-in');
-      }, 1100);
-    });
+    $('#enterBtn').on('click', toggleIntroAndContent);
 
-    $(document).on('wheel', function () {
-      $('#introScreen').addClass('fade-out');
-      setTimeout(function () {
-        $('#introScreen').addClass('d-none');
-        $('#homeMainContent').removeClass('d-none');
-        setSessionItem('introShown', 'true');
-      }, 1000);
-      setTimeout(function () {
-        $('#homeMainContent').addClass('fade-in');
-      }, 1100);
-    });
-  }
+    $(document).on('wheel', toggleIntroAndContent);
+}
 
   function showMainContent() {
     $('#introScreen').addClass('d-none');
@@ -122,6 +118,7 @@ $(document).ready(function () {
       $('.single-project[data-category="' + selectedFilter + '"]').show();
     }
   });
+
 });
 
 

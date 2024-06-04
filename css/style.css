@@ -275,7 +275,7 @@ h6,
 }
 
 #welcomeSection2,
-#projectSection {
+#project {
     background-size: cover;
     background-position: center center;
 }
@@ -345,6 +345,13 @@ h6,
 
 
 /* PROJECTS */
+
+#project:before {
+    content: '';
+    display: block;
+    height: 4rem;
+    visibility: hidden;
+}
 
 .filter-btn.current::after {
     height: 8px;
