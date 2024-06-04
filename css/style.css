@@ -274,7 +274,8 @@ h6,
     background-color: #d5bd9dc1;
 }
 
-#welcomeSection2, #projectSection {
+#welcomeSection2,
+#projectSection {
     background-size: cover;
     background-position: center center;
 }
@@ -285,17 +286,17 @@ h6,
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-  }
+}
 
 .circle-frame {
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1 / 1;
-  }
+}
 
-  .circle-frame[data-hover]:hover {
+.circle-frame[data-hover]:hover {
     background-image: attr(data-hover url);
-  }
+}
 
 
 
@@ -408,7 +409,7 @@ h6,
 }
 
 #studentsGallery img {
-    filter: grayscale(70%); 
+    filter: grayscale(70%);
     padding: 6px;
 }
 
@@ -477,7 +478,8 @@ h6,
     opacity: 0.1;
 }
 
-.gallery-block.grid-gallery .scale-on-hover:hover, .single-project:hover {
+.gallery-block.grid-gallery .scale-on-hover:hover,
+.single-project:hover {
     transform: scale(1.05);
     filter: url('../images/stamp-shadow.svg#shadow');
 }
@@ -572,4 +574,3 @@ h6,
         margin-right: 1rem !important;
     }
 }
-

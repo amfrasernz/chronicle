@@ -90,38 +90,38 @@ $(document).ready(function () {
   });
 
 
-    // PROJECTS
-        function getUrlParameter(name) {
-            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-            var results = regex.exec(location.search);
-            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-        };
+  // PROJECTS
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
 
-        var filter = getUrlParameter('filter') || 'all';
+  var filter = getUrlParameter('filter') || 'all';
 
-        $('.filter-btn').removeClass('current');
-        $('.filter-btn[data-filter="' + filter + '"]').addClass('current');
+  $('.filter-btn').removeClass('current');
+  $('.filter-btn[data-filter="' + filter + '"]').addClass('current');
 
-        if (filter === 'all') {
-            $('.single-project').show();
-        } else {
-            $('.single-project').hide();
-            $('.single-project[data-category="' + filter + '"]').show();
-        }
+  if (filter === 'all') {
+    $('.single-project').show();
+  } else {
+    $('.single-project').hide();
+    $('.single-project[data-category="' + filter + '"]').show();
+  }
 
-        $('.filter-btn').click(function() {
-            var selectedFilter = $(this).data('filter');
-            $('.filter-btn').removeClass('current');
-            $(this).addClass('current');
+  $('.filter-btn').click(function () {
+    var selectedFilter = $(this).data('filter');
+    $('.filter-btn').removeClass('current');
+    $(this).addClass('current');
 
-            if (selectedFilter === 'all') {
-                $('.single-project').show();
-            } else {
-                $('.single-project').hide();
-                $('.single-project[data-category="' + selectedFilter + '"]').show();
-            }
-        });
+    if (selectedFilter === 'all') {
+      $('.single-project').show();
+    } else {
+      $('.single-project').hide();
+      $('.single-project[data-category="' + selectedFilter + '"]').show();
+    }
+  });
 });
 
 
