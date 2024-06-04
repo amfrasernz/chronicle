@@ -510,11 +510,6 @@ h6,
 
 /* CONTACT */
 
-#contactSection {
-    min-height: 80vh;
-    /* padding-bottom: 15%; */
-}
-
 .contact-item:hover {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
