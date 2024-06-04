@@ -299,7 +299,7 @@ h6,
 }
 
   .custom-col {
-    flex: 0 0 calc(100% / 4); /* Default to 4 columns per row */
+    flex: 0 0 calc(100% / 4);
     max-width: calc(100% / 4);
   }
   .custom-col img {
@@ -307,13 +307,13 @@ h6,
   }
   @media (max-width: 768px) {
     .custom-col {
-      flex: 0 0 calc(100% / 2); /* 2 columns per row on small screens */
+      flex: 0 0 calc(100% / 2); 
       max-width: calc(100% / 2);
     }
   }
   @media (max-width: 576px) {
     .custom-col {
-      flex: 0 0 100%; /* 1 column per row on extra small screens */
+      flex: 0 0 100%;
       max-width: 100%;
     }
   }
@@ -416,11 +416,6 @@ h6,
     color: var(--bs-primary);
 }
 
-/* .single-project-anchor {
-    text-decoration: none;
-    color: var(--bs-dark);
-} */
-
 
 /* STUDENTS */
 
@@ -453,7 +448,6 @@ h6,
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url('../images/Stamp-back.png'); */
     background-color: rgba(255, 255, 255, 0.219);
     opacity: 1;
     pointer-events: none;
@@ -468,7 +462,6 @@ h6,
     height: 100%;
     background-image: url('../images/Stamp-back.png');
     opacity: 0.5;
-    /* Adjust opacity as needed */
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
@@ -514,6 +507,7 @@ h6,
 .single-project:hover .bg-opacity-75 {
     background-color: white !important;
 }
+
 
 /* CONTACT */
 
